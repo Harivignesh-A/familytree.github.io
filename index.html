@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152b36">
+  <meta name="description" content="Explore the family tree and browse family branches.">
+  <title>Our Family Tree</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Family tree home">
+        <span class="brand-mark">✦</span>
+        <span><strong>Our Family</strong><small>Roots • Stories • Generations</small></span>
+      </a>
+      <a class="header-link" href="#family-branches">Explore family <span aria-hidden="true">↘</span></a>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A living record of our roots</p>
+        <h1>Every branch tells<br><em>our story.</em></h1>
+        <p class="hero-intro">Explore our family generations, discover each branch, and move easily between family members.</p>
+        <a class="primary-link" href="#family-branches">Explore the family tree <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="tree-symbol"><span>✦</span><i></i><b></b><b></b><b></b></div>
+        <div class="art-caption">Connected<br>through generations</div>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Find a family member">
+      <div class="search-heading">
+        <div><p class="eyebrow">Quick navigation</p><h2>Find a family member</h2></div>
+        <span class="search-hint">Search names or branch names</span>
+      </div>
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="memberSearch" type="search" placeholder="Type a name, e.g. Harivignesh…" autocomplete="off">
+        <kbd>SEARCH</kbd>
+      </label>
+      <div id="searchResults" class="search-results" aria-live="polite"></div>
+    </section>
+
+    <section id="family-branches" class="branches-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Explore by branch</p><h2>Our family branches</h2></div>
+        <p>Select a branch to view its family tree and member details.</p>
+      </div>
+      <div class="branch-grid">
+        <a class="branch-card featured" href="webpages/ariyanayagampillai.html" data-search="ariyanayagam pillai ayyamal">
+          <span class="branch-icon">✧</span><span class="branch-number">01</span>
+          <h3>Ariyanayagam Pillai</h3><p>Family roots and ancestral branches</p><span class="card-arrow">Explore branch ↗</span>
+        </a>
+        <a class="branch-card" href="webpages/ariyamuthupillai.html" data-search="ariyamuthupillai paneerselvam anbazhagan aarnavalli kalyani">
+          <span class="branch-icon">❋</span><span class="branch-number">02</span>
+          <h3>Ariyamuthupillai</h3><p>Children and family members</p><span class="card-arrow">Explore branch ↗</span>
+        </a>
+        <a class="branch-card" href="webpages/balaramanpillai.html" data-search="balaramanpillai hariramachandran harikumar ashok arjunan balambikai">
+          <span class="branch-icon">❖</span><span class="branch-number">03</span>
+          <h3>Balaramanpillai</h3><p>Explore this family branch</p><span class="card-arrow">Explore branch ↗</span>
+        </a>
+        <a class="branch-card" href="webpages/rajamanipillai.html" data-search="rajamanipillai harikumar senthil tamil latha">
+          <span class="branch-icon">✺</span><span class="branch-number">04</span>
+          <h3>Rajamanipillai</h3><p>Explore this family branch</p><span class="card-arrow">Explore branch ↗</span>
+        </a>
+        <a class="branch-card" href="webpages/latchmi.html" data-search="latchmi elango venkatesh murugan">
+          <span class="branch-icon">✧</span><span class="branch-number">05</span>
+          <h3>Latchmi</h3><p>Explore this family branch</p><span class="card-arrow">Explore branch ↗</span>
+        </a>
+        <a class="branch-card" href="webpages/devendren.html" data-search="devendren siramitampillai pooranam puskalai renugadevi">
+          <span class="branch-icon">❋</span><span class="branch-number">06</span>
+          <h3>Devendren</h3><p>Maternal family ancestry</p><span class="card-arrow">Explore branch ↗</span>
+        </a>
+        <a class="branch-card" href="webpages/manipillai/arikrishnan.html" data-search="manipillai arikrishnan anbu arumugam jothi amutha">
+          <span class="branch-icon">❖</span><span class="branch-number">07</span>
+          <h3>Manipillai family</h3><p>Browse members of this branch</p><span class="card-arrow">Explore branch ↗</span>
+        </a>
+        <a class="branch-card personal" href="webpages/harivignesh/harivignesh.html" data-search="harivignesh dharanika sivakumar kavitha geetha">
+          <span class="branch-icon">♡</span><span class="branch-number">08</span>
+          <h3>Harivignesh family</h3><p>Immediate family and relatives</p><span class="card-arrow">Explore branch ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="lineage-note">
+      <span class="note-symbol">✦</span>
+      <div><h2>One family, many stories.</h2><p>Use the search above to find a person quickly, or open a branch to follow the family connections.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Our Family Tree</span><span>Made to keep generations connected</span></footer>
+
+  <script>
+    const members = [
+      ["Ariyanayagam Pillai","webpages/ariyanayagampillai.html","Ancestor"],
+      ["Ariyamuthupillai","webpages/ariyamuthupillai.html","Family branch"],
+      ["Paneerselvam","webpages/ariyamuthupillai/paneerselvam.html","Member"],
+      ["Anbazhagan","webpages/ariyamuthupillai/anbazhagan.html","Member"],
+      ["Aarnavalli","webpages/ariyamuthupillai/aarnavalli.html","Member"],
+      ["Kalyani","webpages/ariyamuthupillai/kalyani.html","Member"],
+      ["Balaramanpillai","webpages/balaramanpillai.html","Family branch"],
+      ["Hariramachandran","webpages/balaramapillai/hariramachandran.html","Member"],
+      ["Harikumar","webpages/balaramapillai/harikumar.html","Member"],
+      ["Ashok","webpages/balaramapillai/ashok.html","Member"],
+      ["Arjunan","webpages/balaramapillai/arjunan.html","Member"],
+      ["Balambikai","webpages/balaramapillai/balambikai.html","Member"],
+      ["Rajamanipillai","webpages/rajamanipillai.html","Family branch"],
+      ["Harikumar Rajamanipillai","webpages/rajamanipillai/harikumar_rajamani.html","Member"],
+      ["Senthil","webpages/rajamanipillai/senthil.html","Member"],
+      ["Tamil","webpages/rajamanipillai/tamil.html","Member"],
+      ["Latha","webpages/rajamanipillai/latha.html","Member"],
+      ["Latchmi","webpages/latchmi.html","Family branch"],
+      ["Elango","webpages/latchmi/elango.html","Member"],
+      ["Venkatesh","webpages/latchmi/venkatesh.html","Member"],
+      ["Devendren","webpages/devendren.html","Family branch"],
+      ["Manipillai – Arikrishnan","webpages/manipillai/arikrishnan.html","Member"],
+      ["Manipillai – Anbu","webpages/manipillai/anbu.html","Member"],
+      ["Manipillai – Arumugam","webpages/manipillai/arumugam.html","Member"],
+      ["Manipillai – Amarajothi","webpages/manipillai/jothi.html","Member"],
+      ["Manipillai – Amutha","webpages/manipillai/amutha.html","Member"],
+      ["Harivignesh","webpages/harivignesh/harivignesh.html","Member"],
+      ["Dharanika","webpages/harivignesh/dharanika.html","Member"],
+      ["Sivakumar","webpages/harivignesh/sivakumar/sivakumar.html","Member"],
+      ["Kavitha","webpages/harivignesh/kavitha/kavitha.html","Member"],
+      ["Geetha","webpages/harivignesh/kavitha/geetha.html","Member"]
+    ];
+    const input = document.getElementById("memberSearch");
+    const results = document.getElementById("searchResults");
+    function renderResults() {
+      const q = input.value.trim().toLocaleLowerCase();
+      results.replaceChildren();
+      if (!q) { results.classList.remove("is-visible"); return; }
+      const matches = members.filter(m => m.join(" ").toLocaleLowerCase().includes(q)).slice(0, 8);
+      results.classList.add("is-visible");
+      if (!matches.length) {
+        const empty = document.createElement("p"); empty.className = "no-results";
+        empty.textContent = "No matching member found. Try another spelling."; results.append(empty); return;
+      }
+      matches.forEach(([name, href, type]) => {
+        const a = document.createElement("a"); a.className = "result-item"; a.href = href;
+        const title = document.createElement("strong"); title.textContent = name;
+        const meta = document.createElement("small"); meta.textContent = type + "  ↗";
+        a.append(title, meta); results.append(a);
+      });
+    }
+    input.addEventListener("input", renderResults);
+    document.addEventListener("keydown", e => { if (e.key === "/" && !["INPUT","TEXTAREA"].includes(document.activeElement.tagName)) { e.preventDefault(); input.focus(); }});
+  </script>
+</body>
+</html>
